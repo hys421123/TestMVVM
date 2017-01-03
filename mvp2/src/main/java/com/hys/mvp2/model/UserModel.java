@@ -7,7 +7,7 @@ import com.hys.mvp2.model.UserBean;
 
 
 public class UserModel implements IUserModel {
-
+// 查找数据的模型
 	private String mFristName;
 	private String mLastName;
 	private int mID;

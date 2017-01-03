@@ -13,7 +13,7 @@ import com.hys.mvp2.presenter.UserPresenter;
 
 public class UserActivity extends Activity implements OnClickListener,
 		IUserView {
-
+//Activity 即 view ,处理与视图相关的代码操作
 	private EditText mFirstNameEditText, mLastNameEditText, mIdEditText;
 	private Button mSaveButton, mLoadButton;
 	private UserPresenter mUserPresenter;
@@ -23,7 +23,9 @@ public class UserActivity extends Activity implements OnClickListener,
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		//执行findViewById操作
 		findWidgets();
+
 		mUserPresenter = new UserPresenter(this);
 		mSaveButton.setOnClickListener(this);
 		mLoadButton.setOnClickListener(this);
